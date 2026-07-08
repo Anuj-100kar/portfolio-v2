@@ -1,9 +1,13 @@
-export default function Hero() {
+import Section from "../../components/common/Section";
+import Container from "../../components/common/Container";
+import AboutContent from "./AboutContent";
+
+export default function About() {
   return (
-    <section className="h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold">
-        About Section
-      </h1>
-    </section>
+    <Section id="about">
+      <Container>
+        <AboutContent />
+      </Container>
+    </Section>
   );
 }

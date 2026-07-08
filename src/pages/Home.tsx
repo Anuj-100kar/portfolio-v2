@@ -1,9 +1,7 @@
-import Hero from "../sections/Hero/hero";
-import About from "../sections/About/about";
-import Skills from "../sections/Skills/skills";
-import Projects from "../sections/Projects/projects";
-import Timeline from "../sections/Timeline/timeline";
-import Github from "../sections/Github/github";
+import Hero from "../sections/Hero/Hero";
+import About from "../sections/About/About";
+import Projects from "../sections/Projects/Projects";
+import Timeline from "../sections/Timeline/Timeline";
 import Services from "../sections/Services/services";
 import Contact from "../sections/Contact/contact";
 
@@ -11,13 +9,13 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <About />
-      <Skills />
+       <About />
       <Projects />
-      <Timeline />
-      <Github />
+       <Timeline />
+     
       <Services />
-      <Contact /> */}
+      <Contact/>
+      
     </>
   );
 }

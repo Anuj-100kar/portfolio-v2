@@ -7,9 +7,14 @@ export default function Navbar() {
         </h1>
 
         <div className="flex gap-8 text-zinc-300">
+          <button >Home</button>
+          <button>About</button>
           <button>Projects</button>
-          <button>Skills</button>
           <button>Contact</button>
+          <button>Journey</button>
+          <button>Services</button>
+          <button>Contact</button>
+          
         </div>
       </div>
     </nav>
