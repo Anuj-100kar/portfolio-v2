@@ -1,7 +1,7 @@
 import Section from "../../components/common/Section";
 import Container from "../../components/common/Container";
 import FeaturedProject from "./FeaturedProject";
-import ProjectGrid from "./ProjectGrid";
+import ProjectGrid from "./ProjectCarousel";
 
 export default function Projects() {
   return (

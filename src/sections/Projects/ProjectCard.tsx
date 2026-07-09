@@ -3,16 +3,19 @@ import type { Project } from "../../data/projects";
 import TechBadge from "./TechBadge";
 import Button from "../../components/ui/Button";
 import OutlineButton from "../../components/ui/OutlineButton";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   project: Project;
 };
 
 export default function ProjectCard({ project }: Props) {
+  const navigate = useNavigate();
   return (
     <motion.div
+      onClick={() => navigate(`/projects/${project.slug}`)}
       whileHover={{ y: -8 }}
-      className="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden"
+      className="w-[360px] flex-shrink-0 bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden"
     >
       <img
         src={project.image}
@@ -36,8 +39,22 @@ export default function ProjectCard({ project }: Props) {
         </div>
 
         <div className="flex gap-3 mt-6">
-          <Button>Live Demo</Button>
-          <OutlineButton>GitHub</OutlineButton>
+
+          <Button
+            onClick={() => navigate(`/projects/${project.slug}`)}
+          >
+            View Details
+          </Button>
+
+          <OutlineButton
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(project.github, "_blank");
+            }}
+          >
+            GitHub
+          </OutlineButton>
+
         </div>
       </div>
     </motion.div>

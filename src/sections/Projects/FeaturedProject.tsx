@@ -65,18 +65,20 @@ export default function FeaturedProject() {
 
         </div>
 
-        <div className="flex gap-5 mt-10">
+        <div className="flex gap-4 mt-8">
 
-          <Button>
+          {project.live && (
+            <Button
+              onClick={() => window.open(project.live, "_blank")}
+            >
+              Live Demo
+            </Button>
+          )}
 
-            Live Demo
-
-          </Button>
-
-          <OutlineButton>
-
+          <OutlineButton
+            onClick={() => window.open(project.github, "_blank")}
+          >
             GitHub
-
           </OutlineButton>
 
         </div>

@@ -1,18 +1,20 @@
 export interface Project {
   id: number;
+  slug:string,
   title: string;
   subtitle: string;
   description: string;
   image: string;
   technologies: string[];
   github: string;
-  live: string;
+  live?: string;
   featured: boolean;
 }
 
 export const projects: Project[] = [
   {
     id: 1,
+    slug:"finorax",
     title: "Finorax",
     subtitle: "AI Powered Financial Platform",
     description:
@@ -32,15 +34,16 @@ export const projects: Project[] = [
       "JWT"
     ],
 
-    github: "https://github.com/yourusername/finorax",
+    github: "https://github.com/Anuj-100kar/FinoraX",
 
-    live: "https://finorax.vercel.app",
+    // live: "https://finorax.vercel.app",
 
     featured: true
   },
 
   {
     id: 2,
+    slug:"ipo-web-application",
     title: "IPO Web Application",
     subtitle: "IPO Discovery & Investment Platform",
     description:
@@ -58,15 +61,16 @@ export const projects: Project[] = [
       "Tailwind CSS"
     ],
 
-    github: "https://github.com/yourusername/ipo-web-app",
+    github: "https://github.com/Anuj-100kar/Blue",
 
-    live: "https://ipo-web-app.vercel.app",
+    // live: "https://ipo-web-app.vercel.app",
 
     featured: false
   },
 
   {
     id: 3,
+    slug:"doctor-booking-system",
     title: "Doctor Appointment Booking System",
     subtitle: "Healthcare Appointment Management Platform",
     description:
@@ -84,15 +88,16 @@ export const projects: Project[] = [
       "Cloudinary"
     ],
 
-    github: "https://github.com/yourusername/doctor-booking",
+    github: "https://github.com/Anuj-100kar/Doctors-online-appointment--by-using-MERN-Stack",
 
-    live: "https://doctor-booking.vercel.app",
+    // live: "https://doctor-booking.vercel.app",
 
     featured: false
   },
 
   {
     id: 4,
+    slug:"tetris-game",
     title: "Tetris Game",
     subtitle: "Classic Puzzle Game with Modern UI",
     description:
@@ -109,9 +114,9 @@ export const projects: Project[] = [
       "Vite"
     ],
 
-    github: "https://github.com/yourusername/tetris-game",
+    github: "https://github.com/Anuj-100kar/tetris_game",
 
-    live: "https://tetris-game.vercel.app",
+    // live: "https://tetris-game.vercel.app",
 
     featured: false
   }
