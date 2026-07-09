@@ -1,5 +1,5 @@
-import HeroButtons from "./herobuttons";
-import HeroSocial from "./herosocial";
+import HeroButtons from "./HeroButtons";
+import HeroSocial from "./HeroSocial";
 import HeroImage from "./HeroImage";
 import { TypeAnimation } from "react-type-animation";
 
